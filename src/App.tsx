@@ -14,6 +14,7 @@ export default function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+  <>
     <nav className='py-2 px-4 flex items-center border-b border-neutral-700'>
       <div className='flex items-center'>
         <Avatar.Root className='mr-2'>
@@ -91,6 +92,10 @@ export default function App() {
         </DropdownMenu.Portal>
       </DropdownMenu.Root>
     </nav>
+    <section className='h-screen flex items-center justify-center text-sm text-neutral-400'>
+      <span>Click on the Bell or Menu Icon</span>
+    </section>
+  </>
   )
 }
 
